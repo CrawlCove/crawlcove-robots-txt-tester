@@ -1,0 +1,47 @@
+{
+  "name": "crawlcove-robots-txt-tester",
+  "version": "1.0.0",
+  "description": "robots.txt tester CLI: fetch a site's robots.txt, test which URLs each crawler may fetch, and flag the mistakes that block a whole site or leak nothing.",
+  "type": "module",
+  "bin": {
+    "robots-txt-tester": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "seo",
+    "robots.txt",
+    "robots-txt",
+    "robots-tester",
+    "crawler",
+    "googlebot",
+    "cli",
+    "crawl-cove"
+  ],
+  "author": "Crawl Cove",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CrawlCove/crawlcove-robots-txt-tester.git"
+  },
+  "homepage": "https://crawlcove.com/tools/robots-txt-generator?utm_source=github&utm_medium=crawlcove-robots-txt-tester",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "robots-parser": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.2"
+  }
+}
